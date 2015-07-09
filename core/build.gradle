@@ -1,0 +1,25 @@
+apply plugin: 'java'
+apply plugin: 'org.flywaydb.flyway'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.h2database:h2:1.3.170'
+        classpath "org.flywaydb:flyway-gradle-plugin:3.2.1"
+    }
+}
+
+dependencies {
+    testCompile 'junit:junit:4.10'
+    compile 'mysql:mysql-connector-java:5.1.36'
+}
+
+flyway {
+    driver = 'com.mysql.jdbc.Driver'
+    url = 'jdbc:mysql://localhost:3306/test'
+    user = 'root'
+    password = ''
+}
+
