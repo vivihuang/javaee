@@ -258,12 +258,12 @@ public class UserDao {
 //                    ", sex="+user.getSex()+
 //                    ", email="+user.getEmail()+
 //                    ", age="+user.getAge()+" where id="+user.getId();
-            PreparedStatement st = conn.prepareStatement("insert into people values(?,?,?,?,?)");
+            PreparedStatement st = conn.prepareStatement("insert into people values(NULL,?,?,?,? )");
             st.setString(1,user.getName());
             st.setString(2,user.getSex());
             st.setString(3,user.getEmail());
             st.setInt(4,user.getAge());
-            st.setInt(5,user.getId());
+            //st.setInt(5,user.getId());
             st.executeUpdate();
 
 //            System.out.println(sql);
