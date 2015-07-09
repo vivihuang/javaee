@@ -17,8 +17,5 @@
     <orderEntry type="library" exported="" name="Gradle: mysql:mysql-connector-java:5.1.36" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.11" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
-    <orderEntry type="library" name="com.googlecode.flyway:flyway-gradle-plugin:2.2" level="project" />
-    <orderEntry type="library" name="flyway-gradle-plugin-3.2.1" level="project" />
-    <orderEntry type="library" name="flyway-gradle-plugin-3.2.1-sources" level="project" />
   </component>
 </module>
